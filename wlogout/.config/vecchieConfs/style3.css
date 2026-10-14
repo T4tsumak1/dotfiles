@@ -1,0 +1,48 @@
+* {
+    background-image: none;
+    font-family: "JetBrains Mono";
+    box-shadow: none;
+    transition: 50ms;
+}
+
+window {
+    background-color: rgba(12, 12, 12, 0.85);
+}
+
+/* Reset generale */
+button {
+    background-color: rgba(12,12,12,0.85);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Prima colonna */
+#lock {
+    background-image: url("/usr/share/wlogout/icons/lock.png");
+    margin-left: 40%;
+    margin-right: 5px;
+}
+
+#shutdown {
+    background-image: url("/usr/share/wlogout/icons/shutdown.png");
+    margin-left: 40%;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+/* Seconda colonna */
+#reboot {
+    background-image: url("/usr/share/wlogout/icons/reboot.png");
+    margin-left: 5px;
+}
+
+#suspend {
+    background-image: url("/usr/share/wlogout/icons/suspend.png");
+    margin-left: 5px;
+    margin-top: 20px;
+}
+

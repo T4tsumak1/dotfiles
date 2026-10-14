@@ -1,0 +1,39 @@
+{
+    "layer": "top",
+    "margin-top": 1,
+    "margin-bottom": 0,
+    "margin-left": 1,
+    "margin-right": 1,
+
+    "include": ["~/.config/waybar/modules.json"],
+
+
+    "modules-left": [
+        "custom/appmenu",
+        "wlr/taskbar",
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces",
+    ],
+
+    "modules-right": [
+        "custom/hypridle",
+        "custom/notification",
+        "network",
+        "hyprland/language",
+        "group/hardware",
+        "bluetooth",
+        "backlight",
+        "pulseaudio",
+        "battery",
+        "clock",
+        "custom/exit"
+    ],
+
+
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": ["disk", "cpu", "memory"]
+    }
+}

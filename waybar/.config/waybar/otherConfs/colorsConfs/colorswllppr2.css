@@ -1,0 +1,9 @@
+@define-color transparent1 rgba(235, 219, 178, 0); /* transparent waybar */
+@define-color transparent0 rgba(0,0,0,0);
+@define-color pure-white #ffffff;
+@define-color bel-viola rgba(53, 18, 106, 0.8);
+@define-color txt1 #f1dfda;
+@define-color filino-grigio rgba(164, 152, 148, 0.8);
+@define-color critical-red #f53c3c;
+@define-color verde-scuro #161e16;
+/* DEFINING COLORS HERE */

@@ -1,0 +1,95 @@
+* {
+    bg:                     rgba(0,0,0,0.4); #11121D00;
+    bg-alt:                 rgba(26,17,15,0.68);
+
+    fg:                     #f1dfda;
+    fg-alt:                 #d8c2bb;
+}
+
+window {
+    width:                  45%;
+    transparency:           "real";
+    cursor:                 "default";
+    border-color:           #1a110f;
+    spacing:                0em;
+    padding:                0em;
+}
+
+mainbox {
+    background-color:       @bg;
+    children:               [inputbar, listview];
+}
+
+element {
+    padding:                12;
+    text-color:             @fg-alt;
+}
+
+element selected {
+    text-color:             @fg;
+}
+
+element-text {
+    background-color:       inherit;
+    text-color:             inherit;
+    vertical-align:         0.5;
+}
+
+element-icon {
+    size: 20;
+}
+
+entry {
+    background-color:       @bg-alt;
+    padding:                12;
+    text-color:             @fg;
+}
+
+inputbar {
+    children:               [prompt, entry];
+}
+
+listbox {
+    padding:                0em;
+    spacing:                0em;
+    orientation:            horizontal;
+    children:               [ "listview" , "mode-switcher" ];
+    background-color:       @bg;
+}
+
+listview {
+    background-color:       @bg;
+    columns:                1;
+    lines:                  8;
+    layout:                 vertical;
+    cycle:                  true;
+    dynamic:                true;
+    scrollbar:              false;
+    reverse:                false;
+    fixed-height:           true;
+    fixed-columns:          true;
+    cursor:                 "default";
+    background-color:       transparent;
+
+}
+
+mainbox {
+    background-color:       @bg;
+    children:               [inputbar, listview];
+}
+
+prompt {
+    background-color:       @bg;
+    enabled:                true;
+    padding:                12 0 0 12;
+    text-color:             @fg;
+}
+
+mode-switcher {
+    orientation:                 vertical;
+    width:                       6.6em;
+    enabled:                     true;
+    padding:                     1.5em;
+    spacing:                     1.5em;
+    background-color:            transparent;
+}

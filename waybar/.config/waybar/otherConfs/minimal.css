@@ -1,0 +1,97 @@
+/* === BASE === */
+* {
+	border: none;
+	border-radius: 0;
+	font-family: "JetBrainsMono Nerd Font", monospace;
+	font-size: 10px;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+window#waybar {
+	background: rgba(0, 0, 0, 0.4); /* trasparente, compatibile con blur */
+	color: #ffffff;
+}
+
+/* === WORKSPACES === */
+#workspaces {
+	margin: 0 3px;
+}
+#workspaces button {
+	padding: 0 4px;
+	margin: 0 2px;
+	background: transparent;
+	color: #ff8700;
+	border: 1px solid #1b1d1e;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+#workspaces button.focused {
+	background: #00afd7;
+	color: #1b1d1e;
+	border-color: #00afd7;
+}
+#workspaces button.urgent {
+	background: #af005f;
+	color: #1b1d1e;
+}
+
+/* === MODULES === */
+#clock, 
+#battery, 
+#cpu, 
+#memory, 
+#network, 
+#pulseaudio, 
+#custom-appmenu,
+#taskbar,
+#custom-notification,
+#tray,
+#custom-exit,
+#mode {
+	padding: 0 6px;
+	margin: 0 1px;
+}
+
+/* === SEPARATORI STILE "i3" === */
+/*.modules-left > widget + widget label,
+.modules-center > widget + widget label,
+.modules-right > widget + widget label {
+	margin-left: 6px;
+	padding-left: 6px;
+	border-left: 1px solid rgba(255, 255, 255, 0.25);
+}*/
+
+/* === COLORI SPECIALI === */
+#network.disconnected {
+	color: #f53c3c;
+}
+#battery.warning:not(.charging) {
+	color: #ff8700;
+}
+#battery.critical:not(.charging) {
+	color: #ffffff;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes blink {
+	to { color: #af005f; }
+}
+
+/* === OPTIONAL: TRAY === */
+#tray {
+	padding: 0 6px;
+}
+
+/* === OPTIONAL: MODE INDICATOR === */
+#mode {
+	background: #af005f;
+	color: #1b1d1e;
+	font-weight: bold;
+	padding: 0 6px;
+}
+

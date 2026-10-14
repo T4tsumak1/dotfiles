@@ -1,0 +1,14 @@
+[flavor]
+dark = "flexoki-dark"
+light = ""
+
+[manager]
+
+[status]
+separator_open = ""
+separator_close = ""
+
+[app]
+overall = {}
+
+

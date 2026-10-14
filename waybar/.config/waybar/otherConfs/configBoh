@@ -1,0 +1,60 @@
+{
+	// qui scrivo il setting finale per waybar
+	// struttura generica qui
+	
+	// position TOP
+	"layer": "top",
+	"margin-top": 1,
+	"margin-bottom": 0,
+	
+	// position BOTTOM
+	//"layer": "bottom",
+	//"margin-top": 0,
+	//"margin-bottom": 14,
+	
+	//"layer": "top",
+	//"height": 16,
+	//"margin-left": 1,
+	//"margin-right": 1,
+	//"spacing": 0,
+	
+	//carico i modulini che butto in un altro file sempre in waybar
+	"include": ["~/.config/waybar/modules.json"],
+	
+	//mods left
+	"modules-left": [
+		"custom/appmenu",
+		"wlr/taskbar",
+		"group/quicklinks",
+		"hyprland/window"
+	],
+	
+	//mods center
+	"modules-center": ["hyprland/workspaces"],
+
+	
+	//mods right
+	"modules-right": [
+		"custom/updates",
+		"pulseaudio",
+        "bluetooth",
+        "keyboard-state",
+		"battery",
+		"group/hardware",
+		"custom/exit",
+		"network",
+		"clock"
+	],
+	
+	//Group Quicklinks (grazie a questo posso tappare sulle app aperte e da lì mi apre una nuova istanza dell'app)
+	"group/quicklinks": {
+		"orientation": "horizontal",
+		"modules": ["custom/firefox",]
+	},
+	
+	//Group HW (per info hw)
+	"group/hardware": {
+		"orientation": "horizontal",
+		"modules": ["disk", "cpu", "memory"],
+	},
+}

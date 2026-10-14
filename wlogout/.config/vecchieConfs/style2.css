@@ -1,0 +1,122 @@
+* {
+    font-family: "JetBrains Mono", monospace;
+    background-image: none;
+    box-shadow: none;
+    transition: 20ms;
+}
+
+window {
+    background-color: rgba(12, 12, 12, 0.85);
+}
+
+button {
+    color: #ffffff;
+
+    background-color: rgba(12,12,12,0.85);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+
+    border: none;
+    border-radius: 10px;
+    outline-style: none;
+    transition: all 100ms ease-in-out;
+    /*border-style: solid;
+    border-width: 2px;*/
+}
+button:hover {
+    background-size: 25%;
+}
+
+#lock {
+    background-color: #161e16;
+    
+    margin: 100px 0px 0px 550px;
+    border-radius: 10px 0px 0px 0px;
+    background-image: url("/usr/share/wleave/icons/lock.svg"),
+    url("/usr/local/share/wleave/icons/lock.svg");
+}
+button:hover#lock {
+    margin: 80px 0px 0px 530px;
+    border-radius: 10px 10px 0px 10px;
+}
+button:active#lock, button:focus#lock {
+    background-color: #3700b3;
+    margin: 80px 0px 0px 530px;
+    border-radius: 10px 10px 0px 10px;
+}
+
+
+#reboot {
+    background-color: #161e16;
+    
+    margin: 0px 0px 100px 550px;
+    border-radius: 0px 0px 0px 10px;
+    background-image: url("/usr/share/wleave/icons/reboot.svg"),
+    url("/usr/local/share/wleave/icons/reboot.svg");
+}
+button:hover#reboot {
+    margin: 0px 0px 80px 530px;
+    border-radius: 10px 0px 10px 10px;
+}
+button:active#reboot, button:focus#reboot {
+    background-color: #3700b3;
+    margin: 0px 0px 80px 530px;
+    border-radius: 10px 0px 10px 10px;
+}
+
+
+#shutdown {
+    background-color: #161e16;
+    
+    margin: 100px 550px 0px 0px;
+    border-radius: 0px 10px 0px 0px;
+    background-image: url("/usr/share/wleave/icons/shutdown.svg"),
+    url("/usr/local/share/wleave/icons/shutdown.svg");
+}
+button:hover#shutdown {
+    margin: 80px 530px 0px 0px;
+    border-radius: 10px 10px 10px 0px;
+}
+button:active#shutdown, button:focus#shutdown {
+    background-color: #3700b3;
+    margin: 80px 530px 0px 0px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+
+#suspend {
+    background-color: #161e16;
+
+    margin: 0px 550px 100px 0px;
+    border-radius: 0px 0px 10px 0px;
+    background-image: url("/usr/share/wleave/icons/suspend.svg"),
+    url("/usr/local/share/wleave/icons/suspend.svg");
+}
+button:hover#suspend{
+    margin: 0px 530px 80px 0px;
+    border-radius: 0px 10px 10px 10px;
+}
+button:active#suspend, button:focus#suspend{
+    background-color: #3700b3;
+    margin: 0px 530px 80px 0px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+/*button:focus,
+button:active,
+button:hover {
+  background-color: #3700b3;
+  outline-style: none;
+}*/
+
+#logout {
+  background-image: url("/usr/share/wleave/icons/logout.svg"),
+    url("/usr/local/share/wleave/icons/logout.svg");
+}
+
+#hibernate {
+  background-image: url("/usr/share/wleave/icons/hibernate.svg"),
+    url("/usr/local/share/wleave/icons/hibernate.svg");
+}
+
